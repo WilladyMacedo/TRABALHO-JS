@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#palavra-secreta, #letras-usadas, #mensagens {
+    font-size: 20px;
+}
+
+#palavra-secreta {
+    text-align: center;
+}
+
+#letras-usadas {
+    margin-top: 10px;
+}
+
+#teclado {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#teclado button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#teclado button:hover {
+    background-color: #ddd;
+}
+
+#mensagens {
+    margin-top: 20px;
+    color: red;
+}

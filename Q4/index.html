@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <style>
+        .calculator {
+            width: 200px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .display {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            text-align: right;
+            padding-right: 5px;
+            border: 1px solid #ccc;
+        }
+        .button {
+            width: 48%;
+            height: 40px;
+            margin: 1%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly>
+        <div class="button" onclick="appendNumber('1')">1</div>
+        <div class="button" onclick="appendNumber('2')">2</div>
+        <div class="button" onclick="appendNumber('3')">3</div>
+        <div class="button" onclick="appendNumber('+')">+</div>
+        <div class="button" onclick="appendNumber('4')">4</div>
+        <div class="button" onclick="appendNumber('5')">5</div>
+        <div class="button" onclick="appendNumber('6')">6</div>
+        <div class="button" onclick="appendNumber('-')">-</div>
+        <div class="button" onclick="appendNumber('7')">7</div>
+        <div class="button" onclick="appendNumber('8')">8</div>
+        <div class="button" onclick="appendNumber('9')">9</div>
+        <div class="button" onclick="appendNumber('')"></div>
+        <div class="button" onclick="appendNumber('0')">0</div>
+        <div class="button" onclick="appendNumber('.')">.</div>
+        <div class="button" onclick="calculate()">=</div>
+        <div class="button" onclick="appendNumber('/')">/</div>
+        <div class="button" onclick="clearDisplay()">C</div>
+        <div class="button" onclick="appendNumber('%')">%</div>
+        <div class="button" onclick="calculateFactorial()">n!</div>
+        <div class="button" onclick="calculateSin()">sin</div>
+        <div class="button" onclick="calculateCos()">cos</div>
+        <div class="button" onclick="calculateTan()">tan</div>
+        <div class="button" onclick="calculateLog()">log</div>
+        <div class="button" onclick="calculateSqrt()">√</div>
+        <div class="button" onclick="calculatePow()">^</div>
+        <div class="button" onclick="calculateSinh()">sinh</div>
+        <div class="button" onclick="calculateCosh()">cosh</div>
+        <div class="button" onclick="calculateTanh()">tanh</div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
